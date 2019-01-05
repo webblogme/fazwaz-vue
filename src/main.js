@@ -5,13 +5,13 @@ import App from './App'
 import router from './router'
 // import VueResources from 'vue-resource'
 
-import TopSection from './components/TopSection'
-import FooterContact from './components/FooterContact'
+import Top from './components/Top'
+import Footer from './components/Footer'
 
 require('./assets/scss/main.scss')
 
-Vue.component('TopSection', TopSection)
-Vue.component('FooterContact', FooterContact)
+Vue.component('Top', Top)
+Vue.component('Footer', Footer)
 
 Vue.config.productionTip = false
 

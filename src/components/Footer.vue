@@ -48,11 +48,42 @@
   </footer>
 </template>
 
-<script>
-export default {
-
+<style lang="scss" scoped>
+@import '../assets/scss/my-variables.scss';
+@import '../../node_modules/bulma/sass/utilities/_all.sass';
+p {
+  font-size: 0.8em;
 }
-</script>
-
-<style>
+.footer {
+  background-color: darken($color: $primary-color, $amount: 40);
+  border-bottom: 10px solid $secondary-color;
+  padding: 50px 0;
+  p {
+    text-align: center;
+    color: #666;
+  }
+}
+.footer__text {
+  display: flex;
+  justify-content: center;
+  ul {
+    margin-bottom: 30px;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      padding: 5px 20px;
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+      }
+    }
+  }
+  @include mobile {
+    text-align: center;
+    display: block;
+    li {
+      padding: 5px;
+    }
+  }
+}
 </style>

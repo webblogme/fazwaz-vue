@@ -1,35 +1,8 @@
 <template>
-  <div>
-    <TopSection/>
-    <div class="columns">
-      <div class="column has-text-centered">
-        <h1 class="is-size-3">ขออภัย ไม่พบหน้านี้</h1>
-        <h2 class="is-size-6">404 Not found</h2>
-      </div>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Page not exits</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ut suscipit quidem autem aliquam doloremque, officiis esse culpa sapiente possimus a iure veritatis atque dolorem ab eligendi dignissimos, sed delectus.</p>
     </div>
-    <FooterContact/>
-  </div>
+  </section>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      // msg: ''
-    }
-  }
-}
-</script>
-
-<style scoped>
-h1,
-h2 {
-  font-family: 'Kanit', sans-serif;
-}
-h1 {
-  margin-top: 10vh;
-}
-h2 {
-  height: 20vh;
-}
-</style>

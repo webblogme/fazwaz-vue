@@ -1,10 +1,7 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container is-fullhd">
+    <Top/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
-
-<script>
-export default {
-}
-</script>
