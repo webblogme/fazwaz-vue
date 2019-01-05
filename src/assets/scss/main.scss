@@ -1,0 +1,82 @@
+@import '~bulma/bulma';
+@import 'shorthand.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$font-stack: 'Lato', sans-serif;
+$primary-color: #0095ff;
+$secondary-color: #f90;
+
+header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  background: $primary-color;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid $secondary-color;
+  .masthead__logo {
+    font-size: 1.8em;
+    font-weight: 800;
+    a {
+      color: #fff;
+    }
+  }
+  .masthead__gadgets {
+    font-size: 1em;
+    color: #fff;
+    @include mobile {
+      display: none;
+    }
+    div {
+      font-weight: bold;
+      color: orange;
+      display: inline-block;
+      background: #000;
+      padding: 5px 10px;
+      border-radius: 50%;
+      &:hover {
+        font-weight: normal;
+        color: #fff;
+      }
+    }
+  }
+  @include from($tablet) {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer {
+  background-color: darken($color: $primary-color, $amount: 40);
+  border-bottom: 10px solid $secondary-color;
+  padding: 50px 0;
+  p {
+    text-align: center;
+    color: #666;
+  }
+}
+.footer__text {
+  display: flex;
+  justify-content: center;
+  ul {
+    margin-bottom: 30px;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      padding: 5px 20px;
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+      }
+    }
+  }
+  @include mobile {
+    text-align: center;
+    display: block;
+    li {
+      padding: 5px;
+    }
+  }
+}
